@@ -139,8 +139,6 @@ fun getInformationAboutFlightAndSeatPrice(
     return t
 }
 
-data class G(val planeCode: String, val fareCondition: String, val price: Map<Int, Set<String>>)
-
 fun getRealSeatInformation(planes: List<Plane>, data: List<PlaneFlightSeatCost>): Map<
         Pair<String, String>,
         Map<Int, Set<String>>
